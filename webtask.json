@@ -1,0 +1,24 @@
+{
+  "title": "Firebase Token Delegation",
+  "name": "firebase",
+  "version": "0.1.0",
+  "author": "Auth0",
+  "description": "Get firebase tokens based on the Auth0 user",
+  "type": "application",
+  "keywords": [
+    "auth0"
+  ],
+   "secrets": {
+    "AUTH0_CLIENT_SECRET": {
+      "required": true,
+      "description": "The Client Secret of the application that will call this. We will use this secret to verify the id_token to send on exchange."
+    },
+    "FIREBASE_SERVICE_ACCOUNT_ID": {
+      "description": "Firebase Service Account. Follow the steps from: https://firebase.google.com/docs/auth/web/custom-auth",
+      "required": true,
+    },
+    "FIREBASE_SERVICE_PRIVATE_KEY": {
+      "description": "Firebase Private Key."
+    }
+  }
+}
