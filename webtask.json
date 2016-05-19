@@ -15,7 +15,7 @@
     },
     "FIREBASE_SERVICE_ACCOUNT_ID": {
       "description": "Firebase Service Account. Follow the steps from: https://firebase.google.com/docs/auth/web/custom-auth",
-      "required": true,
+      "required": true
     },
     "FIREBASE_SERVICE_PRIVATE_KEY": {
       "description": "Firebase Private Key.",
