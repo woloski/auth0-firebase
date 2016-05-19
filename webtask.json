@@ -9,7 +9,7 @@
     "auth0"
   ],
    "secrets": {
-    "AUTH0_CLIENT_SECRET": {
+    "AUTH0_APPLICATION_SECRET": {
       "required": true,
       "description": "The Client Secret of the application that will call this. We will use this secret to verify the id_token to send on exchange."
     },
