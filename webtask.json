@@ -18,7 +18,8 @@
       "required": true,
     },
     "FIREBASE_SERVICE_PRIVATE_KEY": {
-      "description": "Firebase Private Key."
+      "description": "Firebase Private Key.",
+      "required": true
     }
   }
 }
