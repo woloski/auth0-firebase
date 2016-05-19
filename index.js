@@ -25,6 +25,7 @@ app.post('/exchange', function(req, res) {
   var id_token = req.body.id_token;
   var privateKey = req.webtaskContext.secrets.FIREBASE_SERVICE_PRIVATE_KEY;
   console.log(privateKey);
+  console.log(privateKey.replace(/\\[n]/g, '\n'));
   var clientSecret = req.webtaskContext.secrets.AUTH0_CLIENT_SECRET;
   jwt.verify(id_token, new Buffer(clientSecret, 'base64'), function(err, decoded) {
     if (err) return res.json({ error: 'access_denied', error_description: err.toString() }, 401);
